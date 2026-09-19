@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karan Singh Verma — Systems Software Architect &amp; Physical Engineering Specialist</title>
+  <meta name="description" content="Personal portfolio and engineering showcase of Karan Singh Verma. Systems Software Architect, .NET/Win32 Engineer, Autonomous AI & MCP Builder, and CNC/VMC Physical Systems Specialist.">
+  <meta name="author" content="Karan Singh Verma">
+  <meta name="theme-color" content="#07080B">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:title" content="Karan Singh Verma — Systems Software Architect">
+  <meta property="og:description" content="Engineering high-performance software at the metal, autonomous AI ecosystems, and industrial physical machinery.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://karansinghverma979.github.io/">
+  <meta property="og:image" content="assets/img/Apex-Main-HUD.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Lighting -->
+  <div class="ambient-glow">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- Background Grid Mesh Overlay -->
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-monogram">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <span class="brand-text">KARAN<span>.DEV</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#artifacts" class="nav-link">Artifacts</a></li>
+        <li><a href="#specialties" class="nav-link">Specialties</a></li>
+        <li><a href="#mesh" class="nav-link">Hardware Mesh</a></li>
+        <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+        <li><a href="#credentials" class="nav-link">Credentials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>ONLINE</span>
+        </div>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        
+        <!-- Live Telemetry Status Strip -->
+        <div class="hero-meta-strip">
+          <div class="telemetry-badge accent">
+            <span>● NODE: MOTOBOOK ⇄ BLAZE</span>
+          </div>
+          <div class="telemetry-badge">
+            <span>📍 BHOPAL, IN</span>
+          </div>
+          <div class="telemetry-badge">
+            <span id="live-clock">--:--:-- IST</span>
+          </div>
+          <div class="telemetry-badge">
+            <span>GOOGLE CLOUD VERIFIED BUILDER</span>
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering At The Metal.<br>
+          <span class="gradient-text">Physical Precision &amp; Systems Sovereignty.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          I am <strong>Karan Singh Verma</strong> — an unapologetic systems software architect, desktop engineer, and physical automation specialist. I build zero-daemon native applications, autonomous AI agent ecosystems, and precision CNC/VMC industrial toolpaths. Driven by mathematical discipline, low-level control, and zero bloat.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#artifacts" class="btn btn-primary">
+            <span>Explore Shipped Systems</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+          </a>
+          <a href="https://github.com/karansinghverma979" target="_blank" rel="noopener" class="btn btn-glass">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span>GitHub Profile</span>
+          </a>
+          <button class="btn btn-outline-amber" data-copy="karansinghverma979@gmail.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Copy Direct Email</span>
+          </button>
+        </div>
+
+        <!-- Telemetry Metrics Grid -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-value">14+</div>
+            <div class="metric-label">Shipped Repositories &amp; Tools</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">&lt;44ms</div>
+            <div class="metric-label">Cold Boot Runtime Benchmarks</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">0 MB</div>
+            <div class="metric-label">Idle Background RAM Standard</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">100%</div>
+            <div class="metric-label">Physical-to-Digital Precision</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Shipped Artifacts & Systems Showcase -->
+    <section class="section" id="artifacts">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            <span>Proof of Work</span>
+          </div>
+          <h2 class="section-title">Shipped Sovereign Artifacts</h2>
+          <p class="section-desc">Production-grade desktop platforms, native Windows utilities, autonomous agent protocols, and industrial systems.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Systems</button>
+          <button class="filter-btn" data-filter="systems">Desktop &amp; Low-Level</button>
+          <button class="filter-btn" data-filter="ai-mcp">Autonomous AI &amp; MCP</button>
+          <button class="filter-btn" data-filter="hardware">Physical &amp; Mesh</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- Card 1: Apex -->
+          <article class="project-card" data-category="systems">
+            <div class="project-thumb-wrapper">
+              <img src="assets/img/Apex-Main-HUD.png" alt="Apex Sovereign Desktop Orchestrator HUD" class="project-thumb" loading="lazy">
+              <div class="project-badge-overlay">
+                <span class="badge-pill release">v2.0.0</span>
+                <span class="badge-pill bench">&lt;44ms Boot</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag-item">.NET 9</span>
+                <span class="tag-item">Win32 API</span>
+                <span class="tag-item">WPF DirectX</span>
+                <span class="tag-item">C#</span>
+              </div>
+              <h3 class="project-title">Apex Sovereign HUD</h3>
+              <p class="project-desc">
+                High-performance AMOLED desktop window manager and process governor. Features real-time Win32 topmost pins, non-blocking WM_CLOSE graceful shutdowns, and destructive process-tree eradication.
+              </p>
+              <div class="benchmark-strip">
+                <div class="benchmark-item">Cold Boot: <strong>&lt;44ms</strong></div>
+                <div class="benchmark-item">Idle RAM: <strong>0 MB</strong></div>
+                <div class="benchmark-item">CPU: <strong>0.0%</strong></div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/karansinghverma979/Sakshi/tree/main/Modules/Apex" target="_blank" rel="noopener" class="card-link">
+                  <span>Source Code</span> →
+                </a>
+                <a href="https://github.com/karansinghverma979/Sakshi/releases" target="_blank" rel="noopener" class="card-link download-btn">
+                  ↓ Download .exe
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Sakshi -->
+          <article class="project-card" data-category="systems">
+            <div class="project-thumb-wrapper">
+              <img src="assets/img/death_countdown.png" alt="Sakshi Death Engine Countdown" class="project-thumb" loading="lazy">
+              <div class="project-badge-overlay">
+                <span class="badge-pill release">v1.0.0</span>
+                <span class="badge-pill arch">Decoupled</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag-item">Cognitive Governance</span>
+                <span class="tag-item">WASAPI Audio</span>
+                <span class="tag-item">Win32 Hooks</span>
+                <span class="tag-item">.NET 9</span>
+              </div>
+              <h3 class="project-title">Sakshi Platform &amp; Death Engine</h3>
+              <p class="project-desc">
+                Autonomous hardware-accelerated cognitive supervisor &amp; behavioral governance platform for Windows 11. Decoupled architectural host with in-memory WASAPI sound synthesis and low-level keyboard interception.
+              </p>
+              <div class="benchmark-strip">
+                <div class="benchmark-item">Startup: <strong>&lt;38ms</strong></div>
+                <div class="benchmark-item">Audio Latency: <strong>&lt;5ms</strong></div>
+                <div class="benchmark-item">Architecture: <strong>Decoupled</strong></div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/karansinghverma979/Sakshi" target="_blank" rel="noopener" class="card-link">
+                  <span>Source Code</span> →
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Repo Architect Plugin -->
+          <article class="project-card" data-category="ai-mcp systems">
+            <div class="project-thumb-wrapper" style="background: radial-gradient(circle, #0F172A, #020617); display: flex; align-items: center; justify-content: center;">
+              <div style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 2.5rem; font-weight: 900;">OPEN<span style="color: #10B981;">SSF</span></div>
+              <div class="project-badge-overlay">
+                <span class="badge-pill release">Hardened</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag-item">OpenSSF Supply Chain</span>
+                <span class="tag-item">Security Audit</span>
+                <span class="tag-item">CI/CD Hardening</span>
+              </div>
+              <h3 class="project-title">Repo Architect Plugin</h3>
+              <p class="project-desc">
+                Autonomous GitHub repository architect, OpenSSF security hardener &amp; dual-audience documentation engine. Enforces zero path leaks, SHA-pinned actions, and 5-pass pre-launch vulnerability screening.
+              </p>
+              <div class="benchmark-strip">
+                <div class="benchmark-item">Audit Speed: <strong>&lt;50ms</strong></div>
+                <div class="benchmark-item">Scorecard: <strong>OpenSSF 10/10</strong></div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/karansinghverma979/antigravity-repo-architect-plugin" target="_blank" rel="noopener" class="card-link">
+                  <span>Source Code</span> →
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Google Play Console MCP Hub -->
+          <article class="project-card" data-category="ai-mcp">
+            <div class="project-thumb-wrapper" style="background: radial-gradient(circle, #031B15, #010A07); display: flex; align-items: center; justify-content: center;">
+              <div style="font-family: var(--font-mono); color: #34D399; font-size: 2.2rem; font-weight: 800;">PLAY.MCP</div>
+              <div class="project-badge-overlay">
+                <span class="badge-pill bench">Fast Track</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag-item">Model Context Protocol</span>
+                <span class="tag-item">Android API v3</span>
+                <span class="tag-item">Python</span>
+              </div>
+              <h3 class="project-title">Play Console MCP Hub</h3>
+              <p class="project-desc">
+                Production-grade Model Context Protocol (MCP) server for Google Play Console and Android Developer API v3 automation. Allows AI agents to upload .aab bundles, manage tracks, and query review telemetry autonomously.
+              </p>
+              <div class="benchmark-strip">
+                <div class="benchmark-item">API: <strong>Google Play v3</strong></div>
+                <div class="benchmark-item">Protocol: <strong>MCP stdio</strong></div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/karansinghverma979/antigravity-play-console-mcp" target="_blank" rel="noopener" class="card-link">
+                  <span>Source Code</span> →
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Google Workspace MCP Hub -->
+          <article class="project-card" data-category="ai-mcp">
+            <div class="project-thumb-wrapper" style="background: radial-gradient(circle, #1E1B4B, #070617); display: flex; align-items: center; justify-content: center;">
+              <div style="font-family: var(--font-mono); color: #818CF8; font-size: 2.2rem; font-weight: 800;">G-SUITE.MCP</div>
+              <div class="project-badge-overlay">
+                <span class="badge-pill arch">7 Services</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag-item">Google Workspace</span>
+                <span class="tag-item">OAuth2 / Service Acct</span>
+                <span class="tag-item">MCP Protocol</span>
+              </div>
+              <h3 class="project-title">Google Workspace MCP Hub</h3>
+              <p class="project-desc">
+                Unified Model Context Protocol server equipping autonomous agents with complete CRUD operations across the Google Workspace ecosystem: Calendar, Tasks, Gmail, Drive, Docs, Sheets, and Contacts.
+              </p>
+              <div class="benchmark-strip">
+                <div class="benchmark-item">Services: <strong>Calendar, Tasks, Gmail...</strong></div>
+                <div class="benchmark-item">Operations: <strong>Full CRUD</strong></div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/karansinghverma979/antigravity-google-workspace-mcp" target="_blank" rel="noopener" class="card-link">
+                  <span>Source Code</span> →
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Campaigns Tactical OS -->
+          <article class="project-card" data-category="systems ai-mcp">
+            <div class="project-thumb-wrapper" style="background: radial-gradient(circle, #271302, #0A0500); display: flex; align-items: center; justify-content: center;">
+              <div style="font-family: var(--font-mono); color: #F59E0B; font-size: 2.2rem; font-weight: 800;">CAMPAIGNS.OS</div>
+              <div class="project-badge-overlay">
+                <span class="badge-pill release">14 Tools</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag-item">SQLite3 State-Machine</span>
+                <span class="tag-item">Svelte 5</span>
+                <span class="tag-item">Obsidian Sync</span>
+              </div>
+              <h3 class="project-title">Campaigns Tactical Command Center</h3>
+              <p class="project-desc">
+                Zero-latency desktop tactical command center and authoritative SQLite state-machine. Multi-minister tactical governance (Adhipati, Bhakta, Jigyasu, Antaryami) with automated daily strikes and treasury audits.
+              </p>
+              <div class="benchmark-strip">
+                <div class="benchmark-item">Engine: <strong>SQLite ACID</strong></div>
+                <div class="benchmark-item">Sync: <strong>Obsidian Vault</strong></div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/karansinghverma979/antigravity-campaigns-mcp" target="_blank" rel="noopener" class="card-link">
+                  <span>Source Code</span> →
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7: Blaze-SSH & Android Mesh -->
+          <article class="project-card" data-category="hardware systems">
+            <div class="project-thumb-wrapper" style="background: radial-gradient(circle, #1C051D, #080108); display: flex; align-items: center; justify-content: center;">
+              <div style="font-family: var(--font-mono); color: #E879F9; font-size: 2.2rem; font-weight: 800;">BLAZE ⇄ MESH</div>
+              <div class="project-badge-overlay">
+                <span class="badge-pill bench">Port 8022</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag-item">Android 14</span>
+                <span class="tag-item">Termux Zsh</span>
+                <span class="tag-item">OpenSSH Bridge</span>
+                <span class="tag-item">PowerShell 7</span>
+              </div>
+              <h3 class="project-title">Blaze-SSH Distributed Bridge</h3>
+              <p class="project-desc">
+                Dual-node automation hub and low-latency SSH link connecting Windows 11 with Android Termux. Enables zero-friction cross-device hardware telemetry, automated telephony/SMS control, and bi-directional file synchronization.
+              </p>
+              <div class="benchmark-strip">
+                <div class="benchmark-item">Link: <strong>OpenSSH over LAN/Subnet</strong></div>
+                <div class="benchmark-item">Latency: <strong>&lt;4ms</strong></div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/karansinghverma979/Blaze-SSH" target="_blank" rel="noopener" class="card-link">
+                  <span>Source Code</span> →
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8: Industrial CNC & Physical Systems -->
+          <article class="project-card" data-category="hardware">
+            <div class="project-thumb-wrapper" style="background: radial-gradient(circle, #1F2937, #0B0F17); display: flex; align-items: center; justify-content: center;">
+              <div style="font-family: var(--font-mono); color: #9CA3AF; font-size: 2.2rem; font-weight: 800;">CNC &amp; VMC</div>
+              <div class="project-badge-overlay">
+                <span class="badge-pill arch">Physical</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag-item">Mechanical Engineering</span>
+                <span class="tag-item">G-Code / M-Code</span>
+                <span class="tag-item">VMC Machining</span>
+                <span class="tag-item">Kinematics</span>
+              </div>
+              <h3 class="project-title">Physical Engineering &amp; CNC Toolpaths</h3>
+              <p class="project-desc">
+                Classical Mechanical Physics, Machine Design, and hand-coded G-Code/M-Code for multi-axis industrial milling lines and CNC machines. Bridging mechanical kinematic equations with modern digital automation.
+              </p>
+              <div class="benchmark-strip">
+                <div class="benchmark-item">Tolerance: <strong>Micron-level</strong></div>
+                <div class="benchmark-item">Machining: <strong>3-Axis / 5-Axis VMC</strong></div>
+              </div>
+              <div class="project-actions">
+                <span class="card-link" style="color: var(--text-muted); cursor: default;">
+                  <span>Industrial Discipline</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Engineering Specialties & Pillars -->
+    <section class="section" id="specialties">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            <span>Core Pillars</span>
+          </div>
+          <h2 class="section-title">Specialty Disciplines</h2>
+          <p class="section-desc">My technical craft is anchored across four immutable domains of software, intelligence, and physical matter.</p>
+        </div>
+
+        <div class="pillars-grid">
+
+          <!-- Pillar 1 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box" style="color: var(--accent-cyan);">⚡</div>
+            <h3 class="pillar-title">Low-Level Systems &amp; Desktop</h3>
+            <p class="pillar-desc">
+              High-velocity native Windows engineering. Eliminating runtime garbage collection pauses, managing memory with direct Win32 P/Invoke APIs, and building zero-daemon WPF/DirectX surfaces.
+            </p>
+            <div class="pillar-skills-list">
+              <span class="pillar-skill-badge">C# / .NET 9</span>
+              <span class="pillar-skill-badge">Win32 API</span>
+              <span class="pillar-skill-badge">WASAPI Audio</span>
+              <span class="pillar-skill-badge">P/Invoke</span>
+              <span class="pillar-skill-badge">WPF DirectX</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box" style="color: #A855F7;">🧠</div>
+            <h3 class="pillar-title">Autonomous AI &amp; MCP Tooling</h3>
+            <p class="pillar-desc">
+              Designing high-leverage agent frameworks via the Model Context Protocol (MCP). Turning LLMs from conversational toys into sovereign system actors with ACID SQLite memory and API execution.
+            </p>
+            <div class="pillar-skills-list">
+              <span class="pillar-skill-badge">MCP Protocol</span>
+              <span class="pillar-skill-badge">Python</span>
+              <span class="pillar-skill-badge">Google APIs</span>
+              <span class="pillar-skill-badge">SQLite3 State-Machines</span>
+              <span class="pillar-skill-badge">OpenSSF Defense</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box" style="color: #10B981;">⚙️</div>
+            <h3 class="pillar-title">Physical Engineering &amp; CNC/VMC</h3>
+            <p class="pillar-desc">
+              Mechanical Engineering fundamentals, Classical Thermodynamics, Kinematics, and industrial machining. Authoring hand-crafted G-Code and toolpaths for high-precision manufacturing.
+            </p>
+            <div class="pillar-skills-list">
+              <span class="pillar-skill-badge">G-Code / M-Code</span>
+              <span class="pillar-skill-badge">VMC Programming</span>
+              <span class="pillar-skill-badge">Machine Design</span>
+              <span class="pillar-skill-badge">Calculus</span>
+              <span class="pillar-skill-badge">AutoCAD &amp; SolidWorks</span>
+            </div>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box" style="color: #F59E0B;">🌐</div>
+            <h3 class="pillar-title">Distributed Mesh &amp; Automation</h3>
+            <p class="pillar-desc">
+              Interconnecting heterogeneous devices into a unified computing fabric. Orchestrating secure OpenSSH tunnels, Termux Zsh environments, and automated PowerShell maintenance scripts.
+            </p>
+            <div class="pillar-skills-list">
+              <span class="pillar-skill-badge">PowerShell 7</span>
+              <span class="pillar-skill-badge">Termux Zsh</span>
+              <span class="pillar-skill-badge">OpenSSH Mesh</span>
+              <span class="pillar-skill-badge">Android Root/Modding</span>
+              <span class="pillar-skill-badge">Bash / Linux</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Hardware & Mesh Telemetry -->
+    <section class="section" id="mesh">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <span>Live Mesh Infrastructure</span>
+          </div>
+          <h2 class="section-title">Hardware Nodes &amp; Workstation Mesh</h2>
+          <p class="section-desc">My primary compute grid operates as an interconnected pair between an OLED developer workstation and a mobile Android edge node.</p>
+        </div>
+
+        <div class="mesh-container">
+          
+          <!-- Node A: Motobook -->
+          <div class="node-card">
+            <div class="node-header">
+              <div class="node-name">
+                <span style="color: var(--accent-cyan);">●</span>
+                <span>Node 01: Motobook</span>
+              </div>
+              <span class="badge-pill release">Workstation</span>
+            </div>
+            <table class="node-specs-table">
+              <tr>
+                <td>Hardware Platform</td>
+                <td>Intel Core 5 210H (12 Cores / 16 Threads)</td>
+              </tr>
+              <tr>
+                <td>Display Surface</td>
+                <td>14" 2.8K 120Hz 10-bit OLED (2880×1800)</td>
+              </tr>
+              <tr>
+                <td>Operating Environment</td>
+                <td>Windows 11 Pro 64-bit</td>
+              </tr>
+              <tr>
+                <td>Primary Shell &amp; Editor</td>
+                <td>PowerShell 7 • Neovim • Starship Engine</td>
+              </tr>
+              <tr>
+                <td>Security &amp; Ingress</td>
+                <td>OpenSSH Port 22 • Zero Background Telemetry</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Node B: Blaze -->
+          <div class="node-card">
+            <div class="node-header">
+              <div class="node-name">
+                <span style="color: #E879F9;">●</span>
+                <span>Node 02: Blaze</span>
+              </div>
+              <span class="badge-pill bench">Edge Node</span>
+            </div>
+            <table class="node-specs-table">
+              <tr>
+                <td>Hardware Platform</td>
+                <td>Lava Blaze 5G (Arm64 Architecture)</td>
+              </tr>
+              <tr>
+                <td>Operating Environment</td>
+                <td>Android 14 with Termux Linux Layer</td>
+              </tr>
+              <tr>
+                <td>Primary Shell &amp; CLI</td>
+                <td>Zsh • Powerlevel10k • Termux API Bridge</td>
+              </tr>
+              <tr>
+                <td>Networking &amp; Mesh</td>
+                <td>OpenSSH Port 8022 • Dynamic Hotspot Subnet</td>
+              </tr>
+              <tr>
+                <td>Hardware Access</td>
+                <td>Telephony, SMS Relay, Battery Telemetry, TTS</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Terminal & Philosophy Section -->
+    <section class="section" id="philosophy">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            <span>Operating Code</span>
+          </div>
+          <h2 class="section-title">The Invariant Philosophy</h2>
+          <p class="section-desc">Code is not just syntax; it is discipline, awareness of mortality, and rigorous execution.</p>
+        </div>
+
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <div class="terminal-title">karan@motobook: ~/philosophy</div>
+            <div class="terminal-tabs">
+              <button class="terminal-tab-btn active" data-tab="philosophy">philosophy.sh</button>
+              <button class="terminal-tab-btn" data-tab="mesh">mesh-telemetry.ps1</button>
+            </div>
+          </div>
+          <div class="terminal-body">
+            
+            <div id="term-content-philosophy">
+              <p><span class="term-comment">#!/usr/bin/env bash</span></p>
+              <p><span class="term-comment"># 🏛️ SOVEREIGN OPERATING PRINCIPLES</span></p>
+              <p>&nbsp;</p>
+              <p><span class="term-prompt">karan@motobook:~$</span> <span class="term-keyword">cat</span> &lt;&lt; <span class="term-string">'CREED'</span></p>
+              <p>&nbsp;</p>
+              <p><span class="term-cyan">[01] OSTINATO RIGORE (Rigorous Persistence)</span></p>
+              <p>Inspired by Leonardo da Vinci. Obstacles do not bend me. Rigor is applied without compromise to software architecture, mathematical proofs, and physical steel.</p>
+              <p>&nbsp;</p>
+              <p><span class="term-cyan">[02] MEMENTO MORI (Remember That You Must Die)</span></p>
+              <p>Every tick of the processor is non-renewable. Zero tolerance for low-leverage fluff, useless meetings, bloatware daemons, or wasted hours.</p>
+              <p>&nbsp;</p>
+              <p><span class="term-cyan">[03] ANTARYAMI (The Internal Controller)</span></p>
+              <p>Absolute stoic mastery over reaction and emotion. External turbulence is noise; internal technical execution and discipline are absolute.</p>
+              <p><span class="term-string">'CREED'</span></p>
+            </div>
+
+            <div id="term-content-mesh" style="display: none;">
+              <p><span class="term-comment"># ⚡ PowerShell 7 Workstation Mesh Telemetry</span></p>
+              <p><span class="term-prompt">PS C:\Users\karan&gt;</span> <span class="term-keyword">Get-MeshTelemetry</span> -Target <span class="term-string">"All"</span></p>
+              <p>&nbsp;</p>
+              <p><span class="term-string">[+] Node Motobook:</span> Windows 11 Pro 64-bit | Intel Core 5 210H | 16 GB RAM</p>
+              <p><span class="term-string">[+] Active Daemons:</span> 0 (Zero-bloat invariant enforced)</p>
+              <p><span class="term-string">[+] SSH Tunnel:</span> Blaze 5G (Port 8022) | Status: ESTABLISHED (2.4ms)</p>
+              <p><span class="term-string">[+] SQLite State:</span> Campaigns OS | ACID Ledger Healthy</p>
+              <p><span class="term-cyan">[✔] SYSTEM STATUS: SOVEREIGN &amp; OPERATIONAL</span></p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Verified Credentials & Builder Badges -->
+    <section class="section" id="credentials">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <span>Verified Pedigree</span>
+          </div>
+          <h2 class="section-title">Verified Developer Credentials</h2>
+          <p class="section-desc">Publicly verifiable builder tiers, official developer accounts, and cloud certifications.</p>
+        </div>
+
+        <div class="creds-grid">
+          
+          <a href="https://g.dev/karansinghverma979" target="_blank" rel="noopener" class="cred-card">
+            <div class="cred-icon" style="background: rgba(66, 133, 244, 0.15); color: #4285F4;">G</div>
+            <div class="cred-info">
+              <h4>Google Developer Profile</h4>
+              <p>g.dev/karansinghverma979</p>
+            </div>
+          </a>
+
+          <div class="cred-card">
+            <div class="cred-icon" style="background: rgba(234, 67, 53, 0.15); color: #EA4335;">☁</div>
+            <div class="cred-info">
+              <h4>Google Cloud Verified Builder</h4>
+              <p>Active Cloud Architecture Tier</p>
+            </div>
+          </div>
+
+          <div class="cred-card">
+            <div class="cred-icon" style="background: rgba(52, 168, 83, 0.15); color: #34A853;">▶</div>
+            <div class="cred-info">
+              <h4>Google Play Console Publisher</h4>
+              <p>ID Verified Android Developer</p>
+            </div>
+          </div>
+
+          <a href="https://github.com/karansinghverma979" target="_blank" rel="noopener" class="cred-card">
+            <div class="cred-icon" style="background: rgba(255, 255, 255, 0.1); color: #fff;">GH</div>
+            <div class="cred-info">
+              <h4>GitHub Pro &amp; Student Pack</h4>
+              <p>Verified Student Developer Tier</p>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact & Communications Terminal -->
+    <section class="section" id="contact">
+      <div class="container">
+        
+        <div class="contact-card">
+          <h2>Initialize Direct Communication</h2>
+          <p>Whether you represent high-stakes technical projects, high-impact systems engineering, or strategic collaborations—I respond to serious signals.</p>
+
+          <div class="contact-methods">
+            
+            <button class="contact-pill-btn" data-copy="karansinghverma979@gmail.com">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>karansinghverma979@gmail.com</span>
+            </button>
+
+            <a href="https://github.com/karansinghverma979" target="_blank" rel="noopener" class="contact-pill-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://g.dev/karansinghverma979" target="_blank" rel="noopener" class="contact-pill-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              <span>Google Developer</span>
+            </a>
+
+            <a href="mailto:karansinghverma979@gmail.com?subject=Strategic%20Collaboration%20Inquiry" class="contact-pill-btn" style="background: rgba(0, 240, 255, 0.1); border-color: rgba(0, 240, 255, 0.4); color: var(--accent-cyan);">
+              <span>Send Direct Dispatch →</span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Toast Notification -->
+  <div class="toast-notice" id="toast-notice">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toast-text">Copied to clipboard.</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <span>© 2026 Karan Singh Verma. All sovereign rights reserved.</span>
+      </div>
+      <div class="footer-creed">
+        <span>OSTINATO RIGORE • MEMENTO MORI</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Runtime Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
