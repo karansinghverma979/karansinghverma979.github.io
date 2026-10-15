@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Karan Singh Verma Developer Ecosystem</title>
+  <meta name="description" content="Privacy Policy and User Data Compliance for developer applications, plugins, and services authored by Karan Singh Verma.">
+  <meta name="theme-color" content="#07080B">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .policy-container {
+      max-width: 900px;
+      margin: 120px auto 80px;
+      padding: 0 24px;
+      color: #E2E8F0;
+      line-height: 1.75;
+    }
+    .policy-header {
+      margin-bottom: 48px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 24px;
+    }
+    .policy-header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #F8FAFC;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .policy-header p {
+      color: #94A3B8;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+    }
+    .policy-section {
+      margin-bottom: 40px;
+    }
+    .policy-section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #38BDF8;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+    .policy-section p, .policy-section li {
+      color: #CBD5E1;
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+    .policy-section ul {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+    .policy-section li {
+      margin-bottom: 8px;
+    }
+    .badge-card {
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+      backdrop-filter: blur(12px);
+    }
+    .badge-card h3 {
+      font-size: 1.15rem;
+      color: #F8FAFC;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient-glow">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+  </div>
+  <div class="bg-grid-overlay"></div>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-monogram">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <span class="brand-text">KARAN<span>.DEV</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#artifacts" class="nav-link">Artifacts</a></li>
+        <li><a href="privacy.html" class="nav-link active">Privacy</a></li>
+        <li><a href="terms.html" class="nav-link">Terms</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="policy-container">
+    <div class="policy-header">
+      <h1>Privacy Policy &amp; Data Governance</h1>
+      <p>Last Updated: October 2026 | Author: Karan Singh Verma</p>
+    </div>
+
+    <section class="policy-section">
+      <h2>1. Overview &amp; Fundamental Philosophy</h2>
+      <p>This Privacy Policy applies to personal developer tools, open-source software, Model Context Protocol (MCP) servers, and companion utilities authored by Karan Singh Verma, including but not limited to the <strong>Antigravity Google Workspace Plugin</strong>, <strong>Play Console Hub</strong>, and local desktop utilities.</p>
+      <div class="badge-card">
+        <h3>🔒 Sovereign Local-First Invariant</h3>
+        <p>Our applications operate strictly on a <strong>local-first, sovereign architecture</strong>. We do not operate remote tracking servers, advertising networks, telemetry telemetry collectors, or external analytics datastores. All computations and credential storages run exclusively on your local workstation.</p>
+      </div>
+    </section>
+
+    <section class="policy-section">
+      <h2>2. Google API Services User Data Policy Compliance</h2>
+      <p>For applications integrating with Google Cloud Platform and Google Workspace APIs (including Calendar, Tasks, Gmail, Drive, Docs, Sheets, and People/Contacts APIs):</p>
+      <ul>
+        <li><strong>Local Processing Only</strong>: Data accessed through Google APIs is fetched directly into your local process memory to fulfill real-time assistant commands. Zero Google user data is ever transmitted to, cached on, or processed by any external intermediary server.</li>
+        <li><strong>No Model Training</strong>: No user data, email contents, calendar entries, drive files, or contacts are ever used to train AI models or machine learning systems.</li>
+        <li><strong>Credential Quarantine</strong>: OAuth 2.0 access and refresh tokens are stored exclusively on your local machine in quarantined credential directories (e.g. <code>~/.gemini/credentials/google-workspace/</code>) with operating-system level file permissions.</li>
+        <li><strong>No Third-Party Sharing</strong>: We do not transfer, sell, or disclose Google user data to third parties, advertising partners, data brokers, or external entities under any circumstances.</li>
+      </ul>
+    </section>
+
+    <section class="policy-section">
+      <h2>3. Data Retention &amp; Revocation</h2>
+      <p>Because all tokens and configurations reside on your physical computer, you maintain 100% continuous sovereignty over your data:</p>
+      <ul>
+        <li>You can revoke API access at any time through your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener" style="color: #38BDF8; text-decoration: underline;">Google Account Permissions</a>.</li>
+        <li>Deleting the local token file (<code>token.json</code>) or purging the application directory permanently removes all credentials from your system.</li>
+      </ul>
+    </section>
+
+    <section class="policy-section">
+      <h2>4. Security Architecture</h2>
+      <p>We enforce least-privilege API scoping, standard PKCE OAuth 2.0 flows, and strict Dispatch Firewalls requiring explicit operator confirmation before executing outbound emails or destructive file modifications.</p>
+    </section>
+
+    <section class="policy-section">
+      <h2>5. Contact &amp; Governance</h2>
+      <p>If you have questions regarding this Privacy Policy or security practices, contact the maintainer directly:</p>
+      <p><strong>Maintainer:</strong> Karan Singh Verma<br>
+      <strong>Email:</strong> <a href="mailto:karansinghverma979@gmail.com" style="color: #38BDF8;">karansinghverma979@gmail.com</a><br>
+      <strong>GitHub:</strong> <a href="https://github.com/karansinghverma979" target="_blank" rel="noopener" style="color: #38BDF8;">@karansinghverma979</a></p>
+    </section>
+  </main>
+</body>
+</html>
